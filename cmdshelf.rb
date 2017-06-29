@@ -5,7 +5,9 @@ class Cmdshelf < Formula
   head "https://github.com/toshi0383/cmdshelf.git"
 
   def install
-    system "bash <(curl -sL https://raw.githubusercontent.com/toshi0383/scripts/master/swiftpm/install.sh) cmdshelf", libexec
+	system('curl -sL "https://raw.githubusercontent.com/toshi0383/scripts/master/swiftpm/install.sh" > a')
+	system('bash a cmdshelf')
+	system('rm a')
   end
 
   test do
