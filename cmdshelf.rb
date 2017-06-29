@@ -6,7 +6,7 @@ class Cmdshelf < Formula
 
   def install
 	system('curl -sL "https://raw.githubusercontent.com/toshi0383/scripts/master/swiftpm/install.sh" > a')
-	system('bash a cmdshelf')
+	system('bash a toshi0383/cmdshelf')
 	system('rm a')
   end
 
